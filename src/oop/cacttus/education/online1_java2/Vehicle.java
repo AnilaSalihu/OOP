@@ -143,4 +143,20 @@ public class Vehicle {
     private short productionYear;
 
     //metode
+
+    public Vehicle() {
+        //java per ne
+    }
+
+
+    public Vehicle(String mark, String model, float maxSpeed) {
+        //e kjartë
+        //-1000,
+//        if(maxSpeed>=0 && maxSpeed<=400)
+//            this.maxSpeed=maxSpeed;
+
+        setMark(mark);
+        setModel(model);
+        setMaxSpeed(maxSpeed);
+    }
 }
