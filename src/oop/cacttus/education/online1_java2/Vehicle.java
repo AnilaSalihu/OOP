@@ -1,6 +1,11 @@
 package oop.cacttus.education.online1_java2;
 
 public class Vehicle {
+    private static int vehicleCount = 0;
+    public static int getVehicleCount(){
+        return  vehicleCount;
+    }
+
     private String mark;
     private String model;
     private String type;
@@ -145,11 +150,13 @@ public class Vehicle {
     //metode
 
     public Vehicle() {
+        vehicleCount++;
         //java per ne
     }
 
 
     public Vehicle(String mark, String model, float maxSpeed) {
+        vehicleCount++;
         //e kjartë
         //-1000,
 //        if(maxSpeed>=0 && maxSpeed<=400)
@@ -160,3 +167,5 @@ public class Vehicle {
         setMaxSpeed(maxSpeed);
     }
 }
+
+
