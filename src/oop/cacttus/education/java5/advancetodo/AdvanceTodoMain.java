@@ -30,7 +30,12 @@ public class AdvanceTodoMain {
                     reader.nextLine();
                     TodoItem item = ToDoManager.get(index);
                     item.print();
+                    item.changeStatus();
+                    item.print();
                     break;
+
+
+
                 default:
                     System.out.println("Ju lutem zgjedhni nga ato qe ju shfaqen si menu!!!");
                     break;

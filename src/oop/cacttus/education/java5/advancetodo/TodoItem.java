@@ -2,6 +2,7 @@ package oop.cacttus.education.java5.advancetodo;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+
 //emertimi Shift + F6
 public class TodoItem {
     private String name;
@@ -48,10 +49,14 @@ public class TodoItem {
         return createdDate;
     }
 
+    public void changeStatus() {
+        this.isCompleted = !this.isCompleted;
+    }
+
     public void print() {
         System.out.printf("Emri Taskut: %s %n", this.name);
         System.out.printf("Pershkrimi: %s %n", this.note);
         System.out.printf("A eshte i perfunduar: %s %n", this.isCompleted ? "PO" : "JO");
-        System.out.printf("Data krijimit: %s %n",this.createdDate.format(DateTimeFormatter.ISO_DATE));
+        System.out.printf("Data krijimit: %s %n", this.createdDate.format(DateTimeFormatter.ISO_DATE));
     }
 }
