@@ -5,7 +5,9 @@ public class Bird  {
     private String food;
     private String movement;
 
+
     public Bird(String color, String food, String movement) {
+        super();
         this.color = color;
         this.food = food;
         this.movement = movement;
@@ -34,4 +36,10 @@ public class Bird  {
 //    protected void setMovement(String movement) {
 //        this.movement = movement;
 //    }
+
+
+    @Override
+    public String toString() {
+        return String.format("%s %s %s",color,food,movement);
+    }
 }
