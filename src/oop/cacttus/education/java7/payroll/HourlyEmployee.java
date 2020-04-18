@@ -36,4 +36,10 @@ public class HourlyEmployee extends Employee {
     public double getSalary() {
         return this.hours * this.hourlyWage;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+String.format("%n Ka punuar: %d ore %n Pagesa per ore: %.2f %n Totali rroge: %.2f %n",
+                getHours(),getHourlyWage(),getSalary());
+    }
 }

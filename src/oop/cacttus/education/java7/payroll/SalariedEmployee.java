@@ -20,4 +20,9 @@ public class SalariedEmployee extends Employee {
         if (salary >= 0)
             this.salary = salary;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+String.format("%n Rroga mujore bruto: %.2f %n", getSalary());
+    }
 }
