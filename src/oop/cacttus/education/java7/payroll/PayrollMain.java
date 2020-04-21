@@ -4,6 +4,7 @@ public class PayrollMain {
     public static void main(String[] args) {
         Employee manager = new Manager(1,"Naim","Sulejmani",300,"IT");
         Employee programmer = new Programmer(2,"Astrit","Kurtishaj",550,new String[]{"Java","C"});
+        //manager.test();
         System.out.println(manager instanceof Manager); //true per prindin,gjyshin -> false nese nuk trashegohet
         System.out.println(manager instanceof SalariedEmployee);
         System.out.println(manager instanceof Employee);
