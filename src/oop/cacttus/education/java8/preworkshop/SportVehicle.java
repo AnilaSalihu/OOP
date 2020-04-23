@@ -5,7 +5,9 @@ public class SportVehicle extends PassengerVehicle {
 
     public SportVehicle() {
         speedBoost=100;
-        this.setFuel(FuelType.PETROL);
+        Engine eng = new Engine(FuelType.PETROL,300);
+        this.setEngine(eng);
+        //this.setFuel(FuelType.PETROL);
     }
 
     public SportVehicle(int numberOfWheels, String color, FuelType fuel, int maxSpeed, int currentSpeed, String vinNo, int seats, double speedBoost) {

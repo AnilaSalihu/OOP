@@ -72,7 +72,29 @@ public class Vehicle {
     }
 
 
+    public int getMaxLiter() {
+        return maxLiter;
+    }
 
+    public void setMaxLiter(int maxLiter) {
+        this.maxLiter = maxLiter;
+    }
+
+    public int getCurrentLiter() {
+        return currentLiter;
+    }
+
+    public void setCurrentLiter(int currentLiter) {
+        this.currentLiter = currentLiter;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
 
     public boolean start() {
         return Math.random()>0.20;
